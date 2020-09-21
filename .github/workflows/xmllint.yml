@@ -1,0 +1,18 @@
+# for submissions 
+name: xmllint
+
+on: [push]
+
+jobs:
+  xml-linters:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Download schema
+      run: wget https://apps.nextcloud.com/schema/apps/info.xsd
+    - name: Lint info.xml
+      uses: ChristophWurst/xmllint-action@v1
+      with:
+        xml-file: ./submission/samples/REGULAR.xml
+        xml-schema-file: ./submission/aci_highway_external_submit_v2.xsd
