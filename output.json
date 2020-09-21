@@ -1,0 +1,289 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "as2Server": {
+      "type": "string",
+      "minLength": 1
+    },
+    "as2ServerId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canInviteNewPartner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canGenerateKeys": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entityCodeId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canDelete": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canManage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canSendTest204": {
+      "type": "string",
+      "minLength": 1
+    },
+    "currentControlNumber": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entityCode": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "$refid": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canManage": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canDelete": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "key",
+        "label",
+        "$refid",
+        "canManage",
+        "canDelete"
+      ]
+    },
+    "$ref_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "typeName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entityIdentifier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "array": {
+      "type": "string",
+      "minLength": 1
+    },
+    "idCode": {
+      "type": "string",
+      "minLength": 1
+    },
+    "localConfig": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "as2Id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "email": {
+          "type": "array",
+          "items": {
+            "required": [],
+            "properties": {}
+          }
+        }
+      },
+      "required": [
+        "label",
+        "name",
+        "as2Id",
+        "email"
+      ]
+    },
+    "as2Id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canUploadCertificate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "certificate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "certificateId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "email": {
+      "type": "string",
+      "minLength": 1
+    },
+    "encrypt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "preventCanonicalization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "removeCmsAlgorithmProtectionAttrib": {
+      "type": "string",
+      "minLength": 1
+    },
+    "renameDigestToOldName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requestAsyncMdn": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resendMaxRetries": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sign": {
+      "type": "number"
+    },
+    "signedMdn": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "minLength": 1
+    },
+    "localConfigId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mappingProvider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "remoteConfig": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "as2Id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "email": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "label",
+        "name",
+        "as2Id",
+        "email"
+      ]
+    },
+    "remoteConfigId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requestAck": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requiredStatusCodes": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "number"
+    },
+    "testMode": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "as2Server",
+    "as2ServerId",
+    "canInviteNewPartner",
+    "canGenerateKeys",
+    "name",
+    "entityCodeId",
+    "canDelete",
+    "canManage",
+    "canSendTest204",
+    "currentControlNumber",
+    "entityCode",
+    "$ref_id",
+    "key",
+    "label",
+    "typeName",
+    "entityIdentifier",
+    "array",
+    "idCode",
+    "localConfig",
+    "as2Id",
+    "canUploadCertificate",
+    "certificate",
+    "certificateId",
+    "email",
+    "encrypt",
+    "preventCanonicalization",
+    "removeCmsAlgorithmProtectionAttrib",
+    "renameDigestToOldName",
+    "requestAsyncMdn",
+    "resendMaxRetries",
+    "sign",
+    "signedMdn",
+    "url",
+    "localConfigId",
+    "mappingProvider",
+    "remoteConfig",
+    "remoteConfigId",
+    "requestAck",
+    "requiredStatusCodes",
+    "status",
+    "testMode"
+  ]
+}
